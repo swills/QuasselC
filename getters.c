@@ -169,6 +169,8 @@ void get_variant_t(char **buf, int type) {
 					get_map(buf);
 				} else if(strcmp(usertype, "BufferInfo")==0) {
 					get_bufferinfo(buf);
+				} else if(strcmp(usertype, "BufferId")==0) {
+					get_int(buf);
 				} else if(strcmp(usertype, "Network::Server")==0) {
 					get_map(buf);
 				} else {
